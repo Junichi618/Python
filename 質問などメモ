@@ -1,0 +1,15 @@
+sc = StandardScaler()
+
+# 標準化させる値
+data = sc.fit_transform(data)
+
+# 主成分分析の実行
+pca = PCA()
+pca.fit(data)
+
+# データを主成分に変換する
+features = pca.transform(data)
+
+これってClassを使ったインスタンス化を行っている？？テキスト読んでもいまいち分からん
+Python クラスとオブジェクト
+https://aiacademy.jp/texts/show/?id=18&context=subject-python
